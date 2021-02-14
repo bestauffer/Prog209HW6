@@ -10,21 +10,21 @@
 </header>
 
 <main>
-    <div class="row">
-        <div class="col-sm-8">    
+    <h3>My favorite Movies</h3>
+    <div class="col-sm-8"> 
             <div class="jumbotron">
-                <h1>This is great</h1>
-                <p>Welcome to templating using EJS</p>
+                <ul>
+                    <li><%= movie1PassedToRenderPage %></li>
+                    <li><%= movie2PassedToRenderPage %></li>
+                    <li><%= movie3PassedToRenderPage %></li>
+                    <li><%= movie4PassedToRenderPage %></li>
+                </ul>
             </div>
         </div>
     
-        <div class="col-sm-4">        
-            <div class="well">
-                <h3>Look I'm A Sidebar!</h3>
-            </div>
-        </div>
+        
     
-    </div>
+    
     </main>
     <footer>
         <% include ../partials/footer %>

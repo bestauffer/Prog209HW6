@@ -44,7 +44,16 @@ app.get('/uploadData', function(req, res) {
 
 // Movies page 
 app.get('/movies', function(req, res) {
-    res.render('pages/movies');
+    let movie1 = "Avengers";
+    let movie2 = "Animal House";
+    let movie3 = "Alien";
+    let movie4 = "Star Wars";
+    res.render('pages/movies', {
+    movie1PassedToRenderPage: movie1,
+    movie2PassedToRenderPage: movie2,
+    movie3PassedToRenderPage: movie3,
+    movie4PassedToRenderPage: movie4
+    });
 });
 
 // error page 
