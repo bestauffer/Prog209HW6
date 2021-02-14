@@ -28,6 +28,7 @@ app.get('/about', function(req, res) {
 });
 
 
+
 // upLoadData page 
 // sending a get with 1 param
 // http://localhost:3000/uploadData?id=2
@@ -41,7 +42,10 @@ app.get('/uploadData', function(req, res) {
      });
   });
 
-
+// Movies page 
+app.get('/movies', function(req, res) {
+    res.render('pages/movies');
+});
 
 // error page 
 app.get('/error', function(req, res) {
