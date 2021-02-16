@@ -27,7 +27,10 @@ app.get('/about', function(req, res) {
     res.render('pages/about');
 });
 
-
+// default page 
+app.get('/default', function(req, res) {
+    res.render('pages/index');
+});
 
 // upLoadData page 
 // sending a get with 1 param
@@ -53,6 +56,20 @@ app.get('/movies', function(req, res) {
     movie2PassedToRenderPage: movie2,
     movie3PassedToRenderPage: movie3,
     movie4PassedToRenderPage: movie4
+    });
+});
+
+// tvshows page 
+app.get('/tvshows', function(req, res) {
+    let tvShow1 = "WandaVision";
+    let tvShow2 = "Firefly Lane";
+    let tvShow3 = "The Sinner";
+    let tvShow4 = "Attack on Titan";
+    res.render('pages/tvshows',{
+        tvShowOne: tvShow1,
+        tvShowTwo: tvShow2,
+        tvShowThree: tvShow3,
+        tvShowFour: tvShow4
     });
 });
 
